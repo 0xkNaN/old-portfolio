@@ -25,6 +25,9 @@
 				left: 50%;
 				margin-right: -50%;
 				transform: translate(-50%, -50%);
+				
+				animation-name: anim;
+				animation-duration: 1.5s;
 			}
 			h1{
 				font-family: monospace;
@@ -55,6 +58,15 @@
 				text-decoration: none;
 			}
 			
+			@keyframes anim {
+				0%   {transform: translate(-0%, -50%); opacity: 0;}
+				20%   {transform: translate(-1000%, -50%); opacity: 0.2;}
+				40%   {transform: translate(-2000%, -50%); opacity: 0.4;}
+				60%   {transform: translate(-6000%, -50%); opacity: 0.6;}
+				80%   {transform: translate(-0%, -50%); opacity: 0.8;}
+				100%   {transform: translate(-50%, -50%); opacity: 1;}
+			}
+			
 			@media screen and (max-width: 480px){
 				h1{font-size: 20px;}
 				h2{font-size: 16px;}
@@ -76,4 +88,4 @@
 			</div>
 		</div>
 	</body>
-</html>	
+</html>
