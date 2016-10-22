@@ -29,15 +29,15 @@
 				
 			}
 			.anim-1{
-				animation-name: anim;
+				animation-name: me;
 				animation-duration: 1s;
 			}
 			.anim-2{
-				animation-name: anim;
+				animation-name: me;
 				animation-duration: 1.5s;
 			}
 			.anim-3{
-				animation-name: anim;
+				animation-name: media;
 				animation-duration: 2s;
 			}
 			h1{
@@ -73,31 +73,27 @@
 				opacity: .9;
 				animation-name: u_c;
 				width: 30%;
-				animation-duration: 5s;
+				animation-duration: 3s;
 			}
 			
-			@keyframes anim {
+			@keyframes me {
 				0%   {transform: translate(-0%, 0%); opacity: 1;}
 				20%   {transform: translate(-1000%, 0%); opacity: 1;}
 				40%   {transform: translate(-2000%, 0%); opacity: 1;}
 				60%   {transform: translate(-6000%, 0%); opacity: 1;}
 				80%   {transform: translate(-0%, 0%); opacity: 1;}
 				100%   {transform: translate(-50%, 0%); opacity: 1;}
+			}
+			@keyframes media {
+				0%   {opacity: 0;}
+				90%   {opacity: 0;}
+				100%   {opacity: 1;}
 			}
 			
 			@keyframes u_c {
-				0%   {opacity: .0;}
-				50%   {opacity: .0;}
+				0%   {opacity: 0;}
+				80%   {opacity: 0;}
 				100%   {opacity: .9;}
-			}
-			
-			@keyframes media {
-				0%   {transform: translate(-0%, 0%); opacity: 1;}
-				20%   {transform: translate(-1000%, 0%); opacity: 1;}
-				40%   {transform: translate(-2000%, 0%); opacity: 1;}
-				60%   {transform: translate(-6000%, 0%); opacity: 1;}
-				80%   {transform: translate(-0%, 0%); opacity: 1;}
-				100%   {transform: translate(-50%, 0%); opacity: 1;}
 			}
 			
 			@media screen and (max-width: 480px){
@@ -110,7 +106,7 @@
 	<body>
 		<div class="container">
 			<div class="desc">
-				<img class="u-c" src="images/u.gif">
+				<img class="u-c" src="u.gif">
 				<h1 class="anim-1">Hi! My name is Hassen Rmili</h1>
 				<h2 class="anim-2">I'm a Front End Web Developer</h2>
 				<ul class="media anim-3">
