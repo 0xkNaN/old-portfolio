@@ -32,8 +32,14 @@
 			text-align: center;
 			text-shadow: 2px 2px 2px black;
 		}
-		
-		img{
+		.u-c{
+			position: absolute;
+			top: 0;
+			left: 5px;
+			animation-name: u_c;
+			animation-duration: 1s;
+		}
+		.pro{
 			width: 250px;
 			margin: 100px 0 30px 0;
 			border-bottom: 1px solid black;
@@ -69,11 +75,21 @@
 			text-decoration: none;
 		}
 		
+		a:hover{
+			color: #161113;
+		}
+		
+		@keyframes u_c {
+			0%   {top: -100px;}
+			100%   {top: 0;}
+		}
+		
 	</style>
 </head>
 <body>
 	<div class="container">
-		<img src="images/profile.png" alt="Hassen Rmili">
+		<img class="u-c" src="images/under-construction.png" alt="Hassen Rmili">
+		<img class="pro" src="images/profile.png" alt="Hassen Rmili">
 		<h1>Hi! My name is Hassen Rmili</h1>
 		<h2>I'm a Front End Web Developer</h2>
 		<ul class="s-media">
