@@ -1,121 +1,87 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Hassen</title>
-		<script src="https://use.fontawesome.com/4699c7c908.js"></script>
+<head>
+	<title>Background</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hassen</title>
+	<script src="https://use.fontawesome.com/4699c7c908.js"></script>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			background-image:
+				-webkit-linear-gradient(45deg, hsla(134, 99%, 43%, 1) 0%, hsla(134, 99%, 43%, 0) 70%),
+				-webkit-linear-gradient(315deg, hsla(260, 100%, 48%, 1) 10%, hsla(260, 100%, 48%, 0) 80%),
+				-webkit-linear-gradient(225deg, hsla(145, 92%, 50%, 1) 10%, hsla(145, 92%, 50%, 0) 80%),
+				-webkit-linear-gradient(135deg, hsla(157, 92%, 48%, 1) 100%, hsla(157, 92%, 48%, 0) 70%);
+			background-image:
+				linear-gradient(45deg, hsla(134, 99%, 43%, 1) 0%, hsla(134, 99%, 43%, 0) 70%),
+				linear-gradient(135deg, hsla(260, 100%, 48%, 1) 10%, hsla(260, 100%, 48%, 0) 80%),
+				linear-gradient(225deg, hsla(145, 92%, 50%, 1) 10%, hsla(145, 92%, 50%, 0) 80%),
+				linear-gradient(315deg, hsla(157, 92%, 48%, 1) 100%, hsla(157, 92%, 48%, 0) 70%);
+				
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
 		
-		<style>
-			body{
-				margin: 0;
-				padding: 0;
-				color: #202020;
-			}
-			
-			.container{
-				color: #202020;
-				width: 100%;
-				margin: 0 auto;
-			}
-			.desc{
-				height: 157px;
-				text-align: center;
-				position: absolute;
-				top: 20%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-			.anim-1{
-				animation-name: me;
-				animation-duration: 1s;
-			}
-			.anim-2{
-				animation-name: me;
-				animation-duration: 1.5s;
-			}
-			.anim-3{
-				animation-name: media;
-				animation-duration: 2s;
-			}
-			h1{
-				font-family: monospace;
-				font-size: 26px;
-				margin: 0 0 10px 0;
-			}
-			h2{
-				font-family: monospace;
-				font-size: 20px;
-				margin: 0 0 25px 0;
-			}
-			.media{
-				list-style: none;
-				margin: 0 auto;
-				padding: 0;
-			}
-			li{
-				display: inline-block;
-			}
-			.fa{
-				font-size: 30px;
-				margin: 0 8px;
-				padding: 0;
-			}
-			
-			a{
-				color: inherit;
-				text-decoration: none;
-			}
-			
-			.u-c{
-				opacity: .9;
-				animation-name: u_c;
-				width: 30%;
-				height: 226.5px;
-				animation-duration: 3s;
-			}
-			
-			@keyframes me {
-				0%   {transform: translate(-0%, 0%); opacity: 1;}
-				20%   {transform: translate(-1000%, 0%); opacity: 1;}
-				40%   {transform: translate(-2000%, 0%); opacity: 1;}
-				60%   {transform: translate(-6000%, 0%); opacity: 1;}
-				80%   {transform: translate(-0%, 0%); opacity: 1;}
-				100%   {transform: translate(-50%, 0%); opacity: 1;}
-			}
-			@keyframes media {
-				0%   {opacity: 0;}
-				90%   {opacity: 0;}
-				100%   {opacity: 1;}
-			}
-			
-			@keyframes u_c {
-				0%   {opacity: 0;}
-				80%   {opacity: 0;}
-				100%   {opacity: .9;}
-			}
-			
-			@media screen and (max-width: 480px){
-				h1{font-size: 20px;}
-				h2{font-size: 16px;}
-				.fa{font-size: 22px;}
-				.u-c{width: 100%;}
-			}
-		</style>
-	</head>
-	<body>
-		<div class="container">
-			<div class="desc">
-				<img class="u-c" src="images/u.gif" alt="under construction">
-				<h1 class="anim-1">Hi! My name is Hassen Rmili</h1>
-				<h2 class="anim-2">I'm a Front End Web Developer</h2>
-				<ul class="media anim-3">
-					<li><a href="https://twitter.com/_Hassen_Rmili" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/hassenrmili" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-					<li><a href="https://github.com/hassenrmili" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-					<li><a href="https://www.freecodecamp.com/hassenrmili" target="_blank"><i class="fa fa-fire" aria-hidden="true"></i></a></li>
-				</ul>
-			</div>
-		</div>
-	</body>
+		.container{
+			color: white;
+			font-family: monospace;
+			text-align: center;
+			text-shadow: 2px 2px 2px black;
+		}
+		
+		img{
+			width: 250px;
+			margin: 100px 0 30px 0;
+			border-bottom: 1px solid black;
+			box-shadow: 0 7px 4px -4px black;
+		}
+		
+		h1{
+			font-size: 26px;
+			margin: 0 0 10px 0;
+		}
+		h2{
+			font-size: 20px;
+			margin: 0 0 25px 0;
+		}
+		
+		.s-media{
+			list-style: none;
+			margin: 0 auto;
+			padding: 0;
+		}
+		
+		li{
+			display: inline-block;
+		}
+		.fa{
+			font-size: 30px;
+			margin: 0 8px;
+			padding: 0;
+		}
+		
+		a{
+			color: inherit;
+			text-decoration: none;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="profile.png" alt="Hassen Rmili">
+		<h1>Hi! My name is Hassen Rmili</h1>
+		<h2>I'm a Front End Web Developer</h2>
+		<ul class="s-media">
+			<li><a href="https://twitter.com/_Hassen_Rmili" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/hassenrmili" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			<li><a href="https://github.com/hassenrmili" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.freecodecamp.com/hassenrmili" target="_blank"><i class="fa fa-fire" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
+</body>
 </html>
