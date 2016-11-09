@@ -212,6 +212,7 @@ header{
 
 @keyframes u_c {
 	0%   {top: -300px;}
+	30%   {top: -300px;}
 	100%   {top: 0px;}
 }
 
@@ -230,6 +231,6 @@ header{
 
 @keyframes logo {
 	0%   {opacity: 1;}
-	50%   {opacity: 1;}
+	70%   {opacity: 1;}
 	100%   {opacity: 0;}
 }
