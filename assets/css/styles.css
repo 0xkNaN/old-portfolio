@@ -96,7 +96,7 @@ header{
 	cursor: pointer;
 	opacity: 0;
 	
-	animation-name: spin, depth; /*, logo*/
+	animation-name: spin, depth, logo;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-duration: 7s;
