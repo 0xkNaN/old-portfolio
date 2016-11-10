@@ -98,7 +98,7 @@ header{
 	
 	animation-name: spin, depth, logo;
 	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+	/*animation-iteration-count: infinite;*/
 	animation-duration: 7s;
 }
 
