@@ -97,7 +97,7 @@ header{
 	top: -10px;
 	left: 150px;
 	cursor: pointer;
-	/*opacity: 0;*/
+	opacity: 0;
 	
 	animation-name: spin, depth, logo;
 	animation-timing-function: linear;
