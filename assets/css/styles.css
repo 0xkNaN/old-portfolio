@@ -82,12 +82,7 @@ header{
 	color: white;
 }
 
-.logo-title{
-	font-size: 20px;
-	padding: 70px 0 0 150px;
-}
-
-.logo{
+.my-logo{
 	font-family: 'Finger Paint', cursive;
     font-size: 50px;
     margin: 0;
@@ -95,14 +90,19 @@ header{
 	text-align: left;
 	position: absolute;
 	top: -10px;
-	left: 150px;
+	left: 100px;
 	cursor: pointer;
 	opacity: 0;
 	
 	animation-name: spin, depth, logo;
 	animation-timing-function: linear;
-	/*animation-iteration-count: infinite;*/
+	animation-iteration-count: infinite;
 	animation-duration: 7s;
+}
+
+.my-logo-title{
+	font-size: 20px;
+	padding: 70px 0 0 150px;
 }
 
 .main-nav{
@@ -124,17 +124,24 @@ header{
 
 .main-nav li{
 	display: inline-block;
-	margin: 0 20px 0 0;
-	padding: 0 0 3px 0;
+	margin: 0 18px 0 0;
+	padding: 0 3px 3px 3px;
 }
 
 .main-nav a{
 	text-decoration: none;
 	color: inherit;
+	padding: 0 0px 3px 0px;
 }
 
 .main-nav li:hover{
-	color: #2b9642;
+	/*color: #a51457;*/
+	background-image: linear-gradient(to top, #620a33 0%, #dd1973 10%,transparent 60%);
+}
+
+.main-nav .active-tab{
+	/*color: #a51457;*/
+	background-image: linear-gradient(to top, #620a33 0%, #dd1973 10%,transparent 60%);
 }
 
 
@@ -146,6 +153,8 @@ header{
 
 .home{
 	color: white;
+	margin: 0;
+	padding: 0;
 }
 
 .me{
@@ -257,7 +266,7 @@ header{
 
 /*
 	=========================
-	=   Animation  =
+	=   Animation           =
 	=========================
 */
 
@@ -285,3 +294,15 @@ header{
 	70%   {opacity: 1;}
 	100%   {opacity: 0;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
