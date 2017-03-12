@@ -40,10 +40,10 @@
     box-sizing: border-box;
     @include transition(all .15s ease);
     &:hover:not(.active) {
-      border-top: 3px solid $nav_hover_color;
+      border-top: 3px solid $red_theme;
     }
     &.active {
-      border-bottom: 3px solid $nav_hover_color;
+      border-bottom: 3px solid $red_theme;
     }
   }
   &.popup {

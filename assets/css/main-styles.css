@@ -5,7 +5,7 @@ html, body {
   height: 100%;
   overflow: hidden; }
 
-.c-section, #work, #blog, #contact {
+.c-section, #work, #contact {
   position: absolute;
   top: 0;
   left: 0;
@@ -175,10 +175,67 @@ html, body {
 #work {
   display: none; }
 
-#blog {
-  display: none; }
-
 #contact {
   display: none; }
+
+.contact-container {
+  position: absolute;
+  width: 700px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0 10px; }
+
+.contact-title {
+  font-family: 'Sanchez', serif;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: #d1d1d1;
+  margin: 0 0 40px 0; }
+  .contact-title .colored {
+    color: #f44336;
+    font-size: 1.2em; }
+
+.contact-description {
+  font-size: 1.275em;
+  line-height: 1.6em;
+  color: #8a8a8a;
+  margin-bottom: 70px; }
+
+.contact-email {
+  color: #f44336;
+  font-weight: 600;
+  text-decoration: none; }
+  .contact-email:hover {
+    color: #f44336;
+    text-decoration: none; }
+
+.contact-social-links {
+  text-align: center; }
+  .contact-social-links a {
+    color: white;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+    position: relative; }
+    .contact-social-links a .link-bg {
+      display: inline-block;
+      background-color: #f44336;
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      transition: all .2s ease; }
+    .contact-social-links a i {
+      display: inline-block;
+      font-size: 2.12em;
+      line-height: 60px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10; }
+    .contact-social-links a:hover .link-bg {
+      transform: scale(1.2); }
 
 /*# sourceMappingURL=main-styles.css.map */
