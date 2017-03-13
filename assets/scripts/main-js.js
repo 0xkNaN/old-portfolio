@@ -25,7 +25,6 @@ function showLoader(state,t) {
     loader.style.display = "";
     loader.classList.add("show");
   } else {
-    
     setTimeout(function() {
       mainNav.style.display = "";
       mainNav.classList.add("popup");
