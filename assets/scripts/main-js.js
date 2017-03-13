@@ -1,31 +1,37 @@
 
+const loader  = document.getElementById("loader");
+const canvas  = document.getElementById("particles-canvas");
+const filter  = document.getElementsByClassName("filter-home")[0];
+const mainNav = document.getElementsByClassName("main-nav")[0];
+const nav     = document.getElementsByClassName("nav")[0];
+const nav_btn = document.getElementsByClassName("nav-mob-btn")[0];
+
+
+// Canavs ini
+function iniCanvas() {
+  var options = {
+    particleColor: '#888',   // #f44336 | #888
+    background: 'assets/images/home_bg.jpg',
+    interactive: true,
+    speed: 'medium',
+    density: 'high'
+  };
+  var particleCanvas = new ParticleNetwork(canvas, options);
+}
+
 /* Loader */
 function showLoader(state, t, canvasState) {
-  var loader = document.getElementById("loader");
-  var canvas = document.getElementById("particle-canvas");
-  var mainNav = document.getElementsByClassName("main-nav")[0];
   if(state) {  
     canvas.style.display = "none";
-    canvas.innerHTML = "";
     mainNav.style.display = "none";
     loader.style.display = "";
     loader.classList.add("show");
   } else {
     if(canvasState) {
       canvas.style.display = "block";
-      
-      // Canavs ini
-      var options = {
-        particleColor: '#888',   // #f44336 | #888
-        background: 'assets/images/home_bg.jpg',
-        interactive: true,
-        speed: 'medium',
-        density: 'high'
-      };
-      var particleCanvas = new ParticleNetwork(canvas, options);
     }
     
-    setTimeout(function() { 
+    setTimeout(function() {
       mainNav.style.display = "";
       mainNav.classList.add("popup");
       loader.classList.remove("show");
@@ -39,7 +45,6 @@ function showLoader(state, t, canvasState) {
 
 
 /* Nav */
-var nav = document.getElementsByClassName("nav")[0];
 nav.onclick = function(e) {
   e = e || window.event;
   if(e.target.nodeName == "A") {
@@ -53,11 +58,13 @@ nav.onclick = function(e) {
     
     // Loader
     if(e.target.getAttribute("href") == "#home") {
-      showLoader(true, 0, true);
+      showLoader(true, 0, false);
       showLoader(false, 1000, true);
+      console.log("home");
     } else {
       showLoader(true, 0, false);
       showLoader(false, 1000, false);
+      console.log("else");
     } 
     
     // tabs
@@ -81,11 +88,13 @@ nav.onclick = function(e) {
 }
 
 
-var nav_btn = document.getElementsByClassName("nav-mob-btn")[0];
 nav_btn.onclick = function() {
   nav.style.display = "block";
 }
 
 /* ini */
+iniCanvas();
 showLoader(true, 0, false);
-document.body.onload = showLoader(false, 1000, true);
+document.body.onload = function() {
+  showLoader(false, 1000, true);
+};
