@@ -20,8 +20,8 @@ function iniCanvas() {
 }
 
 /* Loader */
-function showLoader(state, t, canvasState) {
-  if(state) {  
+function showLoader(state,t,canvasState) {
+  if(state) {
     canvas.style.display = "none";
     mainNav.style.display = "none";
     loader.style.display = "";
@@ -96,5 +96,5 @@ nav_btn.onclick = function() {
 iniCanvas();
 showLoader(true, 0, false);
 document.body.onload = function() {
-  showLoader(false, 1000, true);
+  showLoader(false, 1300, true);
 };
