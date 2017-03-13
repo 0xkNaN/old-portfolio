@@ -9,6 +9,13 @@
   left: 50%;
   transform: translate(-50%,0);
   padding: 0 10px;
+  margin-bottom: 20px;
+  @media screen and (max-width:768px) {
+    width: 500px;
+  }
+  @media screen and (max-width:510px) {
+    width: 100%;
+  }
 }
 .contact-title {
   font-family: 'Sanchez', serif;
@@ -19,6 +26,9 @@
   .colored {
     color: $red_theme;
     font-size: 1.2em;
+  }
+  @media screen and (max-width:510px) {
+    font-size: 4em;
   }
 }
 .contact-description {
@@ -43,7 +53,7 @@
     display: inline-block;
     height: 60px;
     width: 60px;
-    margin-left: 20px;
+    margin-left: 10px;
     position: relative;
     .link-bg {
       display: inline-block;
