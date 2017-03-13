@@ -6,6 +6,7 @@ function showLoader(state, t, canvasState) {
   var mainNav = document.getElementsByClassName("main-nav")[0];
   if(state) {  
     canvas.style.display = "none";
+    canvas.innerHTML = "";
     mainNav.style.display = "none";
     loader.style.display = "";
     loader.classList.add("show");
@@ -42,10 +43,15 @@ var nav = document.getElementsByClassName("nav")[0];
 nav.onclick = function(e) {
   e = e || window.event;
   if(e.target.nodeName == "A") {
+    
+    // Collapsed Nav
+    nav.style.display = "";
+    
     if(e.target.innerHTML == "Blog") return;
     
     e.preventDefault();
     
+    // Loader
     if(e.target.getAttribute("href") == "#home") {
       showLoader(true, 0, true);
       showLoader(false, 1000, true);
@@ -74,6 +80,11 @@ nav.onclick = function(e) {
   }
 }
 
+
+var nav_btn = document.getElementsByClassName("nav-mob-btn")[0];
+nav_btn.onclick = function() {
+  nav.style.display = "block";
+}
 
 /* ini */
 showLoader(true, 0, false);
