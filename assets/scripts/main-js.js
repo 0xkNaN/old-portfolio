@@ -7,7 +7,7 @@ const nav     = document.getElementsByClassName("nav")[0];
 const nav_btn = document.getElementsByClassName("nav-mob-btn")[0];
 
 
-// Canavs ini
+// Canavs 
 function iniCanvas() {
   var options = {
     particleColor: '#888',   // #f44336 | #888
@@ -20,16 +20,11 @@ function iniCanvas() {
 }
 
 /* Loader */
-function showLoader(state,t,canvasState) {
+function showLoader(state,t) {
   if(state) {
-    canvas.style.display = "none";
-    mainNav.style.display = "none";
     loader.style.display = "";
     loader.classList.add("show");
   } else {
-    if(canvasState) {
-      canvas.style.display = "block";
-    }
     
     setTimeout(function() {
       mainNav.style.display = "";
@@ -57,15 +52,10 @@ nav.onclick = function(e) {
     e.preventDefault();
     
     // Loader
-    if(e.target.getAttribute("href") == "#home") {
-      showLoader(true, 0, false);
-      showLoader(false, 1000, true);
-      console.log("home");
-    } else {
-      showLoader(true, 0, false);
-      showLoader(false, 1000, false);
-      console.log("else");
-    } 
+    showLoader(true, 0);
+    setTimeout(function() {
+      showLoader(false, 1000);
+    }, 10);
     
     // tabs
     var tabs = Array.from(nav.children);
@@ -92,9 +82,10 @@ nav_btn.onclick = function() {
   nav.style.display = "block";
 }
 
+
 /* ini */
-iniCanvas();
-showLoader(true, 0, false);
+showLoader(true, 0);
 document.body.onload = function() {
-  showLoader(false, 1300, true);
+  iniCanvas()
+  showLoader(false, 1300);
 };
