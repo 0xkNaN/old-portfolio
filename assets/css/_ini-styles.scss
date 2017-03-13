@@ -1,10 +1,4 @@
-html, body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 14px;
-  height: 100%;
-  height: 100%;
-  overflow: hidden;
-}
+
 
 // Vars
 $red_theme: #f44336;
@@ -16,6 +10,16 @@ $red_theme: #f44336;
   -webkit-transition: $p;
      -moz-transition: $p;
           transition: $p;
+}
+
+
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  height: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 
