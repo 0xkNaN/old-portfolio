@@ -5,7 +5,7 @@ html, body {
   height: 100%;
   overflow: hidden; }
 
-.c-section, #work, #contact {
+.c-section, #about, #work, #contact {
   position: absolute;
   top: 0;
   left: 0;
@@ -212,6 +212,101 @@ html, body {
 
 #about {
   display: none; }
+
+.about-container {
+  position: absolute;
+  width: 700px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0 10px;
+  margin-bottom: 40px; }
+  @media screen and (max-width: 768px) {
+    .about-container {
+      width: 500px; } }
+  @media screen and (max-width: 510px) {
+    .about-container {
+      width: 100%; } }
+
+.about-title {
+  font-family: 'Sanchez', serif;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: #d1d1d1;
+  margin: 0 0 60px 0; }
+  .about-title .colored {
+    color: #f44336;
+    font-size: 1.2em; }
+  @media screen and (max-width: 510px) {
+    .about-title {
+      font-size: 3.7em; } }
+
+.about-p {
+  font-size: 1.3em;
+  line-height: 1.6em;
+  color: #8a8a8a;
+  margin-bottom: 20px; }
+
+.about-p.well-p {
+  font-size: 1.8em;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.about-keyword {
+  color: #8a8a8a;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  padding: 0 3px;
+  transition: all .3s ease; }
+  .about-keyword .link-txt {
+    position: relative;
+    z-index: 3; }
+  .about-keyword .custom-link {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #f44336;
+    border-radius: 0 0 1px 1px;
+    transition: all .3s ease;
+    z-index: 2; }
+  .about-keyword:hover {
+    color: white;
+    text-decoration: none; }
+    .about-keyword:hover .custom-link {
+      border-radius: 3px;
+      height: 100%; }
+  .about-keyword:visited, .about-keyword:active {
+    text-decoration: none; }
+
+.about-skillz {
+  width: 60%;
+  margin: 70px auto; }
+  @media screen and (max-width: 510px) {
+    .about-skillz {
+      width: 100%; } }
+
+.about-skillz-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  overflow: hidden; }
+  .about-skillz-list .skill {
+    color: #8a8a8a;
+    font-family: 'Sanchez', serif;
+    font-size: 1.2em;
+    float: left;
+    width: 40%;
+    padding: 10px 0;
+    margin: 0 5%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; }
 
 #work {
   display: none; }
