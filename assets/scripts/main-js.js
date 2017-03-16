@@ -1,7 +1,7 @@
 
 const loader  = document.getElementById("loader");
 const canvas  = document.getElementById("particles-canvas");
-const filter  = document.getElementsByClassName("filter-home")[0];
+const filter  = document.getElementById("main-filter");
 const mainNav = document.getElementsByClassName("main-nav")[0];
 const nav     = document.getElementsByClassName("nav")[0];
 const nav_btn = document.getElementsByClassName("nav-mob-btn")[0];
@@ -22,10 +22,12 @@ function iniCanvas() {
 /* Loader */
 function showLoader(state,t) {
   if(state) {
+    filter.style.display = "";
     loader.style.display = "";
     loader.classList.add("show");
   } else {
     setTimeout(function() {
+      filter.style.display = "none";
       mainNav.style.display = "";
       mainNav.classList.add("popup");
       loader.classList.remove("show");
@@ -87,4 +89,10 @@ showLoader(true, 0);
 document.body.onload = function() {
   iniCanvas()
   showLoader(false, 1300);
+};
+document.body.onclick = function(e) {
+  e = e || window.event;
+  console.log("X  : ", e.screenX);
+  console.log("Y  : ", e.screenY);
+  console.log(e);
 };

@@ -13,14 +13,21 @@ $red_theme: #f44336;
 }
 
 
-
 html, body {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   height: 100%;
-  height: 100%;
+  width: 100%;
   overflow: hidden;
+  
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
+
 
 
 // Commons
@@ -36,6 +43,17 @@ html, body {
   display: block !important;
 }
 
+
+// Main Filter
+#main-filter {
+  background-color: $red_theme;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
 
 // Loader
 #loader {
