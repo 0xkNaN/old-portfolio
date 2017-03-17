@@ -1,0 +1,29 @@
+.courses-container {
+  position: absolute;
+  width: 90%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,0);
+  padding: 0 10px;
+  margin-bottom: 40px;
+  @media screen and (max-width:768px) {
+    width: 90%;
+  }
+  @media screen and (max-width:510px) {
+    width: 90%;
+  }
+}
+.courses-title {
+  font-family: 'Sanchez', serif;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #d1d1d1;
+  margin: 0 0 60px 0;
+  .colored {
+    color: $red_theme;
+    font-size: 1.1em;
+  }
+  @media screen and (max-width:510px) {
+    font-size: 3.7em;
+  }
+}

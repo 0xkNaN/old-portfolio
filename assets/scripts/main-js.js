@@ -55,7 +55,7 @@ nav.onclick = function(e) {
     // Loader
     showLoader(true, 0);
     setTimeout(function() {
-      showLoader(false, 1000);
+      showLoader(false, 950);
     }, 10);
     
     // tabs

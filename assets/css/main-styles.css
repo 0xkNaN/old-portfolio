@@ -261,6 +261,11 @@ html, body {
   line-height: 1.6em;
   color: #8a8a8a;
   margin-bottom: 20px; }
+  .about-p .mern-stack {
+    font-size: 0.9em;
+    font-weight: 600;
+    font-style: italic;
+    padding: 0 3px; }
 
 .about-p.well-p {
   font-size: 1.8em;
@@ -279,6 +284,12 @@ html, body {
   .about-keyword .link-txt {
     position: relative;
     z-index: 3; }
+    .about-keyword .link-txt.link-txt-note:after {
+      content: "*";
+      position: relative;
+      top: 0;
+      left: 3px;
+      color: #f44336; }
   .about-keyword .custom-link {
     display: block;
     position: absolute;
@@ -322,6 +333,12 @@ html, body {
     margin: 0 5%;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd; }
+    .about-skillz-list .skill.skill-note:after {
+      content: "*";
+      position: relative;
+      top: 0;
+      left: 3px;
+      color: #f44336; }
 
 #work {
   display: none; }
@@ -334,6 +351,14 @@ html, body {
   padding: 0 10px;
   margin-bottom: 40px;
   width: 100%; }
+
+.work-intro {
+  color: black;
+  font-family: 'Sanchez';
+  font-size: 4em;
+  font-weight: bold;
+  max-width: 90%;
+  margin: 30px auto 100px auto; }
 
 .work-sample-wrapper {
   box-sizing: border-box;
@@ -456,5 +481,33 @@ html, body {
       z-index: 10; }
     .contact-social-links a:hover .link-bg {
       transform: scale(1.2); }
+
+.courses-container {
+  position: absolute;
+  width: 90%;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0 10px;
+  margin-bottom: 40px; }
+  @media screen and (max-width: 768px) {
+    .courses-container {
+      width: 90%; } }
+  @media screen and (max-width: 510px) {
+    .courses-container {
+      width: 90%; } }
+
+.courses-title {
+  font-family: 'Sanchez', serif;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #d1d1d1;
+  margin: 0 0 60px 0; }
+  .courses-title .colored {
+    color: #f44336;
+    font-size: 1.1em; }
+  @media screen and (max-width: 510px) {
+    .courses-title {
+      font-size: 3.7em; } }
 
 /*# sourceMappingURL=main-styles.css.map */
