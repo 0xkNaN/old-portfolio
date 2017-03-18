@@ -21,7 +21,7 @@
   font-family: 'Sanchez', serif;
   font-size: 4.5em;
   text-transform: uppercase;
-  color: #d1d1d1;
+  color: $s_title_top;
   margin: 0 0 40px 0;
   .colored {
     color: $red_theme;
@@ -34,7 +34,7 @@
 .contact-description {
   font-size: 1.275em;
   line-height: 1.6em;
-  color: #8a8a8a;
+  color: $content_color;
   margin-bottom: 70px;
 }
 .contact-email {

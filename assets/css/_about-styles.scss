@@ -21,7 +21,7 @@
   font-family: 'Sanchez', serif;
   font-size: 4.5em;
   text-transform: uppercase;
-  color: #d1d1d1;
+  color: $s_title_top;
   margin: 0 0 60px 0;
   .colored {
     color: $red_theme;
@@ -34,7 +34,7 @@
 .about-p {
   font-size: 1.3em;
   line-height: 1.6em;
-  color: #8a8a8a;
+  color: $content_color;
   margin-bottom: 20px;
   .mern-stack {
     font-size: 0.9em;
@@ -51,7 +51,7 @@
   margin-bottom: 5px;
 }
 .about-keyword {
-  color: #8a8a8a;
+  color: $content_color;
   display: inline-block;
   position: relative;
   text-decoration: none;
@@ -110,7 +110,7 @@
   text-align: center;
   overflow: hidden;
   .skill {
-    color: #8a8a8a;
+    color: $content_color;
     font-family: 'Sanchez', serif;
     font-size: 1.2em;
     float: left;
