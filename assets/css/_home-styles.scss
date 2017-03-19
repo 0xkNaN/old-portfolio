@@ -16,7 +16,6 @@
     height: 287px;
     margin: 0 auto 20px auto;
     position: relative;
-    transform: rotate(-5deg);
 
     img {
       width: 100%;
@@ -46,6 +45,30 @@
     font-weight: 600;
     letter-spacing: .07em;
     text-transform: uppercase;
+  }
+  
+  @media screen and (max-width:768px) {
+    .my-logo {
+      width: 230px;
+      height: 264px;
+      margin: 0 auto 15px auto;
+    }
+    .title-top {
+      font-size: 2.5em;
+    }
+    .title-bottom {
+      font-size: 1em;
+    }
+  }
+  @media screen and (max-width:450px) {
+    .my-logo {
+      width: 210px;
+      height: 241px;
+      margin: 0 auto 10px auto;
+    }
+    .title-top {
+      font-size: 2.1em;
+    }
   }
 }
 #particles-canvas {

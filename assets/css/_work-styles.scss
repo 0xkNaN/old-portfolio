@@ -8,45 +8,51 @@
   left: 50%;
   transform: translate(-50%,0);
   padding: 0 10px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   width: 100%;
+  max-width: 1386px;
 }
-.work-intro {
-  color: #484343;
-  font-family: 'Sanchez';
-  font-size: 3em;
-  font-weight: bold;
-  max-width: 90%;
-  margin: 30px auto 100px auto;
+.work-title-m {
+  font-family: 'Sanchez', serif;
+  font-size: 4.5em;
+  text-transform: uppercase;
+  color: $s_title_top;
+  width: 700px;
+  margin: 0 auto 100px auto;
+  .colored {
+    color: $red_theme;
+    font-size: 1.2em;
+  }
+  @media screen and (max-width:768px) {
+    width: 500px;
+  }
+  @media screen and (max-width:510px) {
+    font-size: 3.7em;
+    width: 100%;
+  }
 }
 .work-sample-wrapper {
   box-sizing: border-box;
-  height: 200px;
+  height: auto;
   width: 33.33%;
+  max-width: 445px;
   float: left;
-  padding: 3px;
+  padding: 2px;
   position: relative;
-  background-clip: content-box;
-  
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1.0, 1.0);
-  transform: translateZ(0);
   
   @media screen and (max-width:900px) {
     width: 50%;
   }
   @media screen and (max-width:510px) {
+    float: none;
     width: 100%;
+    margin: 0 auto;
   }
   
   .work-sample {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background-color: rgba(244, 67, 54, 0.11);
-    background-clip: content-box;
-    border: 1px solid transparent;
     position: relative;
     &:hover .work-info{
       opacity: 1;
@@ -62,17 +68,19 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $red_theme;
-    padding: 30px 20px;
+    padding: 50px 20px;
+    background-color: rgba(0,0,0,0.7);
     opacity: 0;
-    transition: all .3s ease;
+    transition: all .5s ease;
     .work-title {
-      font-size: 1.5em;
+      color: white;
+      font-size: 1.3em;
       font-weight: bold;
       margin: 0 0 5px 0;
     }
     .work-desc {
-      font-size: 1.15em;
+      color: white;
+      font-size: 1.1em;
       font-weight: bold;
     }
   }
