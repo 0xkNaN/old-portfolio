@@ -51,6 +51,7 @@ html, body {
     position: fixed;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
     #loader .spinner:after {
       content: "";
@@ -137,6 +138,7 @@ html, body {
     position: absolute;
     top: 0;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     width: 500px;
     box-sizing: border-box; }
@@ -152,6 +154,7 @@ html, body {
         height: 100%;
         width: 100%;
         background-color: #f44336;
+        -webkit-transform: none;
         transform: none;
         padding-top: 50px; } }
   .main-nav a {
@@ -215,6 +218,7 @@ html, body {
   top: 47%;
   left: 50%;
   text-align: center;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 350px;
   z-index: 2; }
@@ -289,6 +293,7 @@ html, body {
   width: 700px;
   top: 10%;
   left: 50%;
+  -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   padding: 0 10px;
   margin-bottom: 40px; }
@@ -403,6 +408,7 @@ html, body {
   position: absolute;
   top: 10%;
   left: 50%;
+  -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   padding: 0 10px;
   margin-bottom: 100px;
@@ -541,9 +547,11 @@ html, body {
       position: absolute;
       top: 50%;
       left: 50%;
+      -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       z-index: 10; }
     .contact-social-links a:hover .link-bg {
+      -webkit-transform: scale(1.2);
       transform: scale(1.2); }
 
 .todo-container {
@@ -551,6 +559,7 @@ html, body {
   width: 90%;
   top: 10%;
   left: 50%;
+  -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   padding: 0 10px;
   margin-bottom: 40px; }
