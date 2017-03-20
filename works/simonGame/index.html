@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon Game</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css">
+	<link href="assets/styles/css.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="game-base hr-grid">
+			<div class="hr-row">
+				<div id="box-1" class="block block-one hr-col-6" style="background-color: #980c00;"></div><!--
+				--><div id="box-2" class="block block-two hr-col-6" style="background-color: #009a28;"></div>
+			</div>
+			<div class="hr-row">
+				<div id="box-3" class="block block-three hr-col-6" style="background-color: #003ba0;"></div><!--
+				--><div id="box-4" class="block block-four hr-col-6" style="background-color: #9c9c00;"></div>
+			</div>
+			<div class="controls">
+				<div class="screen hr-row">
+					<span id="screen" class="screen-viewer hr-col-12"></span>
+				</div>
+				<div class="buttons hr-row">
+					<div class="hr-col-4"><span id="on">on</span></div><!--
+					--><div class="hr-col-4"><span id="start">start</span></div><!--
+					--><div class="hr-col-4"><span id="strict">strict<i id="stictLed" class="strict-led" style="color: #424242;">.</i></span></div>
+				</div>
+			</div>
+		</div>
+		
+		<audio id="audio1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+		<audio id="audio2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+		<audio id="audio3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+		<audio id="audio4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+	</div>
+	<!-- JS -->
+	<script src="assets/scripts/js.js"></script>
+</body>
+</html>

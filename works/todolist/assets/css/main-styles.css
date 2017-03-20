@@ -1,0 +1,99 @@
+body {
+	background-color: #d52031;
+	font-size: 14px;
+}
+body:after {
+	content: "/* A Simple TODO List */";
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	font-size: 0.9em;
+	color: white;
+}
+.container {
+	display: inline-block;
+	min-width: 350px;
+	margin-top: 50px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.main-header {
+	padding: 20px;
+	background-color: #312525;
+	border-radius: 5px 5px 0 0;
+	text-align: center;
+}
+.title {
+	color: white;
+	font-size: 1.6em;
+	font-family: arial;
+	margin: 10px 0 15px 0;
+}
+.add-input {
+	font-size: 14px;
+	font-family: serif;
+	padding: 7px;
+	outline: none;
+	border: none;
+	border-radius: 2px 0 0 2px;
+	box-shadow: inset 0px 0px 10px #cacaca;
+	letter-spacing: 0.7px;
+}
+.add-button {
+	font-size: 1em;
+	font-family: serif;
+	padding: 7px 15px;
+	border: none;
+	border-radius: 0 2px 2px 0;
+	background-color: #d52031;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	right: 4px;
+	transition: all .3s;
+}
+.add-button:hover {
+	background-color: #e04343;
+}
+.todo-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+.todo-list-item {
+	color: #312525;
+	font-weight: bold;
+	font-size: 1.07em;
+	font-family: serif;
+	padding: 13px 25px;
+	background-color: #f7f1f1;
+	border-bottom: 1px solid #d8d8d8;
+	opacity: 1;
+	transition: all 1s ease;
+}
+.todo-list-item.del {
+	opacity: 0;
+}
+.todo-list-item .item:hover {
+	color: #e04343;
+}
+.todo-list .todo-list-item:last-child {
+	border-bottom: none;
+}
+.item {
+	display: inline-block;
+	max-width: 200px;
+}
+.cl {
+	float: right;
+	line-height: 18px;
+	font-weight: bold;
+	font-size: 1.4em;
+	cursor: pointer;
+}
+.cl:hover {
+	color: #e04343;
+}

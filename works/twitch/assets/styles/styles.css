@@ -1,0 +1,118 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background: url("../images/bg.png");
+/*   background-repeat: no-repeat; */
+/*   background-position: center; */
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.container{
+  max-width: 330px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 0px;
+  border-radius: 3px;
+}
+.menu{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  border-top: 3px solid #0a0610;
+  border-bottom: 3px solid #0a0610;
+}
+.menu li{
+  background: #0a0610;
+  display: inline;
+  padding: 3px 0px;
+  text-align: center;
+}
+.menu li a{
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+.menu li.all a,
+.menu li a:hover {
+  color: rgb(100, 65, 165);
+}
+.menu li:nth-child(2){
+  border-left: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+.search-container{
+  position: relative;
+  padding: 3px 0px;
+  margin: 15px 0px;
+  background-color: white;
+  text-align: center;
+}
+.search-container input{
+  text-indent: 0px;
+  border: 2px solid #6441a5;
+  border-radius: 15px;
+  width: 90%;
+  padding-left: 35px;
+  font-size: 18px;
+  font-family: cursive;
+}
+.search-container input:focus{
+  outline-width: 0px;
+}
+.search-container i{
+  position: absolute;
+  padding: 11px;
+  font-size: 15px;
+  color: #6441a5;
+}
+.t-tv{
+  margin: 0px;
+  padding: 0px;
+  border-top: 1px solid #9e9c9c;
+}
+.t-tv span{
+  margin: 0px;
+  padding: 0px 5px;
+}
+.t-tv li{
+  list-style: none;
+  font-size: 22px;
+  margin-top: 12px;
+}
+.t-tv li img {
+  width: 67px;
+  border-radius: 50%;
+}
+.t-tv li span a {
+  text-decoration: none;
+  color: #0a0610;
+  font-family: cursive;
+}
+.t-tv li span.status{
+  color: #6441a5;;
+  font-size: 20px;
+  text-align: center;
+}
+footer{
+  padding: 5px;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  background-color: #0a0610;
+  font-size: 13px;
+  font-style: oblique;
+  font-weight: 700;
+  color: white;
+}
+footer a{
+  color: #6441a5;
+  font-weight: bold;
+}
+a:hover, a:visited, a:focus{
+  text-decoration: none;
+}
+.row{
+  margin: 0px;
+  padding: 0px;
+  border-radius: 3px 3px 0 0
+}

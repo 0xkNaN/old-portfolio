@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro Clock</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="assets/styles/css.css" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="container">
+		<div class="clock-section hr-grid">
+			<div class="restart hr-row">
+				<div class="hr-col-12">
+					<h1 id="pomodoro-title" class="clock-title">Session</h1>
+					<i id="restart-on" class="fa fa-refresh" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div id="timer-on" class="timer hr-row">
+				<div class="hr-col-12">
+					<div id="timer-time" class="remaining-time"><span id="timer-time-min">00</span>:<span id="timer-time-sec">00</span></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="setting-section hr-grid">
+			<div class="session-setting hr-row">
+				<div class="setting-title hr-col-8">
+					<h3>Session Length</h3>
+				</div><!--
+				--><div class="setting-options hr-col-4">
+					<div class="hr-row">
+						<span id="session-length-minus" class="setting-sign hr-col-1">-</span><!--
+						--><span id="session-length-time" class="length  hr-col-10">25</span><!--
+						--><span id="session-length-plus" class="setting-sign  hr-col-1">+</span>
+					</div>
+				</div>
+			</div>
+			<div class="break-setting hr-row">
+				<div class="setting-title hr-col-8">
+					<h3>Break Length</h3>
+				</div><!--
+				--><div class="setting-options hr-col-4">
+					<div class="hr-row">
+						<span id="break-length-minus" class="setting-sign hr-col-1">-</span><!--
+						--><span id="break-length-time" class="length hr-col-10">5</span><!--
+						--><span id="break-length-plus" class="setting-sign hr-col-1">+</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- JS -->
+	<script src="assets/scripts/js.js"></script>
+	<script src="https://use.fontawesome.com/4699c7c908.js"></script>
+</body>
+</html>

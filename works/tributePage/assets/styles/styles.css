@@ -1,0 +1,85 @@
+body{
+  background-color: #d3d3d3;
+  margin: 60px 200px;
+}
+
+.cont-bg{
+  background-color: #fff;
+  border-radius: 7px 7px 0px 0px;
+  padding: 30px 30px 15px 30px;
+}
+.name h1{
+  font-size: 60px;
+  font-family: 'Abril Fatface', cursive;
+  width: 100%;
+}
+
+.name span{
+  font-size: 24px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+img{
+  width: 100%;
+  margin: 35px 0px 40px 0px;
+}
+
+p{
+  font-family: 'Poppins';
+  font-size: 15px;
+}
+
+.carrer{
+  padding-top: 15px;
+  max-width: 700px;
+  margin: auto;
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+
+.carrer-header{
+  font-size: 26px;
+  font-family: 'Josefin Sans';
+  margin-bottom: 15px;
+}
+
+blockquote{
+  margin: auto; max-width: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.footer{
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgb(211, 211, 211);
+  border-radius: 0px 0px 7px 7px;
+  font-size: 12px;
+  font-style: oblique;
+  font-weight: 700;
+}
+
+@media (max-width: 768px){
+  body{
+    background-color: #d3d3d3;
+    margin: 60px 100px;
+  }
+  .cont-bg{
+    background-color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    padding: 30px 30px 15px 30px;
+  }
+  .name h1{
+    font-size: 40px;
+  }
+  .name span{
+    font-size: 19px;
+  }
+}
+@media (max-width: 425px){
+  body{
+    background-color: #d3d3d3;
+    margin: 0px;
+  }
+}
