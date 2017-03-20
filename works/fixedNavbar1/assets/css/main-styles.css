@@ -1,0 +1,132 @@
+body {
+	background-color: #0e83cd;
+	font-size: 14px;
+	font-family: sans-serif;
+	margin: 0;
+}
+.main-header {
+	margin: 0;
+	color: black;
+	background-color: white;
+	padding: 17px 0;
+	font-weight: bold;
+	overflow: hidden;
+	box-shadow: 1px 0 5px gray;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+.logo-container {
+	float: left;
+}
+.logo{
+	font-size: 1.285em;
+	cursor: pointer;
+}
+.main-hero img {
+	width: 100%;
+}
+.main-nav {
+	float: right;
+}
+.nav-cl {
+	display: none;
+	color: white;
+	cursor: pointer;
+	font-size: 2em;
+	position: fixed;
+	top: 5px;
+	right: 15px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	z-index: 100;
+}
+.main-nav > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.main-nav > ul > li {
+	display: inline-block;
+}
+.main-nav > ul > li > a {
+	color: inherit;
+	font-size: 0.9em;
+	text-decoration: none;
+	padding: 0 17px;
+}
+.main-nav > ul > li > a:hover {
+	color: #0e83cd;
+}
+.nav-btn {
+	display: none;
+	float: right;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	width: 43px;
+}
+.nav-btn-top,
+.nav-btn-middle,
+.nav-btn-bottom {
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: black;
+	margin-bottom: 5px;
+}
+
+.content {
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+	text-shadow: 1px 1px 2px black;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	z-index: 10;
+}
+
+
+@media screen and (max-width:992px) {
+	.main-nav > ul > li > a {
+		padding: 0 13px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.nav-btn {
+		display: block;
+	}
+	.main-nav {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #0e83cd;
+		padding: 50px 0;
+	}
+	.main-nav > ul > li {
+		display: block;
+	}
+	.main-nav > ul > li > a {
+		color: white;
+		font-size: 1.5em;
+		display: inline-block;
+		padding: 10px 0;
+		text-align: center;
+		width: 100%;
+	}
+	.main-nav > ul > li > a:hover {
+		color: #0e83cd;
+		background-color: white;
+	}
+	
+}

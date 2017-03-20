@@ -1,0 +1,94 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  font-size: 16px;
+  background: url("../images/cbe99ecd92bcb4a525e53bdca394b7d6x.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.container{
+  color: black;
+  border-radius: 5px;
+  font-size: 25px;
+  max-width: 250px;
+  margin: 80px auto 0px auto;
+  padding: 0px 15px 10px 15px;
+  background-color: rgba(83, 83, 56, 0.08);;
+}
+.title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0px 10px 0px;
+}
+.title .wi{
+  font-size: 18px;
+}
+.date{
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+.country{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-family: cursive;
+}
+.icon{
+  text-align: center;
+  margin-bottom: 15px;
+}
+.icon i{
+  font-size: 75px;
+  margin: 0 auto;
+}
+.desc{
+  text-align: center;
+  font-size: 17px;
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+.values{
+  padding: 0px 10px;
+}
+.temp{
+
+}
+.temp i{
+  font-size: 25px;
+}
+.temp .value{
+  font-size: 23px;
+}
+.temp .unity{
+  margin-left: -5px;
+}
+.humidity{
+  text-align: right;
+}
+.humidity i{
+  font-size: 23px;
+}
+.humidity .value{
+  font-size: 23px;
+}
+.sun-rise{
+
+}
+.sun-rise i{
+  font-size: 20px;
+}
+.sun-rise .value{
+  font-size: 11px;
+}
+.sun-set{
+  text-align: right;
+}
+.sun-set i{
+  font-size: 20px;
+}
+.sun-set .value{
+  font-size: 11px;
+}

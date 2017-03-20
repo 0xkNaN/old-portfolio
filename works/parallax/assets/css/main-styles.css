@@ -1,0 +1,64 @@
+html, body {
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	height: 100%;
+}
+.sec-1 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.25)), url(../images/para.jpg);
+	height: 100%;
+}
+.sec-2 {
+	padding: 40px 100px;
+	color: #352e2e; 	
+}
+.sec-3 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.2)), url("../images/para2.jpg");
+	height: 50%;
+}
+.sec-inter {
+	background-color: #282E34;
+	padding: 70px 40px;
+	color: white;
+	text-align: center;
+}
+.sec-5 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.25)), url("../images/para3.jpg");
+	height: 50%;
+}
+.sec-6 {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.25)), url(../images/para.jpg);
+	height: 100%;
+}
+.sec-title {
+	text-align: center;
+}
+
+.sec-content {
+	color: white;
+	font-size: 1.3em;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	padding: 15px 30px;
+	background-color: rgba(40, 46, 52, 0.2);
+	border-radius: 3px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.sec-parallax {
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+
+@media screen and (max-width:600px) {
+	.sec-2 {
+		padding: 20px 30px;
+	}
+}

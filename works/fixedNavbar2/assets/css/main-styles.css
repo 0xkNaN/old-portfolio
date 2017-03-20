@@ -1,0 +1,148 @@
+body {
+	background-color: #0e83cd;
+	font-size: 14px;
+	font-family: sans-serif;
+	margin: 0;
+}
+.main-header {
+	transition: all 600ms ease;
+	margin: 0;
+	color: white;
+	padding: 50px 0;
+	font-weight: bold;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+.main-hero img {
+	width: 100%;
+}
+.logo-container {
+	float: left;
+}
+.logo{
+	font-size: 18px;
+	cursor: pointer;
+}
+.main-nav {
+	float: right;
+}
+.nav-cl {
+	display: none;
+	color: white;
+	cursor: pointer;
+	font-size: 2em;
+	position: fixed;
+	top: 5px;
+	right: 15px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+.main-nav > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.main-nav > ul > li {
+	display: inline-block;
+}
+.main-nav > ul > li > a {
+	color: inherit;
+	font-size: 13px;
+	text-decoration: none;
+	padding: 0 17px;
+}
+.main-nav > ul > li > a:hover {
+	color: #f44336;
+}
+.scrolled {
+	color: #614c4c;
+	padding: 25px 0;
+	background-color: white;
+	box-shadow: 1px 0 5px #4c4c4c;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.nav-btn {
+	display: none;
+	float: right;
+	border: 1px solid rgba(255, 255, 255, 0.43);
+	border-radius: 5px;
+	outline: none;
+	background-color: transparent;
+	padding: 7px;
+	height: 35px;
+	width: 45px;
+}
+.nav-btn-top,
+.nav-btn-middle,
+.nav-btn-bottom {
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.95);
+	margin-bottom: 5px;
+}
+.scrolled .nav-btn {
+	border: none;
+}
+.scrolled .nav-btn-top,
+.scrolled .nav-btn-middle,
+.scrolled .nav-btn-bottom {
+	background-color: rgba(0, 0, 0, 0.95);
+}
+.content {
+	color: white;
+	font-size: 2em;
+	text-align: center;
+	text-shadow: 1px 1px 2px black;
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 100%;
+}
+
+
+@media screen and (max-width:992px) {
+	.main-nav > ul > li > a {
+		padding: 0 13px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.nav-btn {
+		display: block;
+	}
+	.main-nav {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #0e83cd;
+		padding: 50px 0;
+	}
+	.main-nav > ul > li {
+		display: block;
+	}
+	.main-nav > ul > li > a {
+		color: white;
+		font-size: 1.5em;
+		display: inline-block;
+		padding: 10px 0;
+		text-align: center;
+		width: 100%;
+	}
+	.main-nav > ul > li > a:hover {
+		color: #0e83cd;
+		background-color: white;
+	}
+	
+}

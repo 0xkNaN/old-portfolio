@@ -1,0 +1,85 @@
+html, body {
+	font-size: 14px;
+	font-family: "Open sans", sans-serif;
+	margin: 0;
+	background-color: #f3f3f3;
+}
+.add-cart-btn-container {
+	text-align: center;
+	margin-top: 100px;
+}
+.add-cart-title {
+	color: #2f3131;
+	font-size: 1.7em;
+	font-weight: 400;
+}
+.add-cart-btn {
+	color: white;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	border-radius: 5%;
+	background-color: #03a9f4;
+	box-shadow: 0px 3px 0px rgba(134, 134, 134, 0.19);
+	padding: 15px 20px;
+	font-size: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	transition: all 300ms ease;
+}
+.add-cart-btn:hover {
+	background-color: #00bcd4;
+	box-shadow: 0px 3px 1px rgba(134, 134, 134, 0.19);
+}
+.add-cart-btn.clicked {
+	animation-name: clickedBtn;
+	animation-duration: 150ms;
+}
+@keyframes clickedBtn {
+	0% {transform: scale(1);}
+	50% {transform: scale(0.9);}
+	100% {transform: scale(1);}
+}
+.add-cart {
+	cursor: pointer;
+	padding: 10px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0 0 14px 2px rgba(199, 199, 199, 0.72);
+	box-sizing: border-box;
+	
+	opacity: 0;
+	transition: all 300ms ease;
+}
+.add-cart.up {
+	animation-name: cart-up;
+	animation-duration: 300ms;
+	opacity: 1;
+}
+@keyframes cart-up {
+	0% {bottom: -50px;}
+	50% {bottom: 35px;}
+	100% {bottom: 30px;}
+}
+.add-cart-ico {
+	width: 100%;
+}
+.add-cart-item-num {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #03a9f4;
+	text-align: center;
+	color: white;
+	font-size: 0.8em;
+	line-height: 25px;
+}
