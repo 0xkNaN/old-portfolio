@@ -4,8 +4,8 @@ var tic = {
 	gameStates    : ["ini","start", "end"],
 	currGameState : "",
 	playersSign   : {
-						"x" : "<img class=\"played-move\" src=\"assets/images/_pX.png\" alt=\"\">",
-						"o" : "<img class=\"played-move\" src=\"assets/images/_pO.png\" alt=\"\">"
+						"x" : "<img class=\"played-move\" src=\"assets/images/pX.png\" alt=\"\">",
+						"o" : "<img class=\"played-move\" src=\"assets/images/pO.png\" alt=\"\">"
 					},
 	playerSign    : "",
 	aiSign        : "",
