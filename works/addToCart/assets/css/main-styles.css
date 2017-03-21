@@ -2,56 +2,83 @@ html, body {
 	font-size: 14px;
 	font-family: "Open sans", sans-serif;
 	margin: 0;
-	background-color: #f3f3f3;
+	background-color: #f7f7f7;
 }
-.add-cart-btn-container {
+.add-to-cart-title {
+	color: #314d5d;
 	text-align: center;
-	margin-top: 100px;
+	font-size: 2.3em;
+	margin: 70px 0 50px 0;
 }
-.add-cart-title {
-	color: #2f3131;
-	font-size: 1.7em;
-	font-weight: 400;
+.items-list {
+	margin: 50px auto 0 auto;
 }
-.add-cart-btn {
-	color: white;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	border-radius: 5%;
-	background-color: #03a9f4;
-	box-shadow: 0px 3px 0px rgba(134, 134, 134, 0.19);
-	padding: 15px 20px;
-	font-size: 1em;
-	font-weight: 600;
+.item {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+	margin: 0 auto 50px auto;
+	max-width: 400px;
+	background-color: white;
+}
+.item-preview {
+	background-color: white;
+	padding: 50px 40px;
+	border-radius: 5px;
+}
+.item-preview img {
+	width: 100%;
+}
+.item-add {
+	background-color: white;
+	padding:  10px;
+	font-size: .8em;
+	font-weight: bold;
+	color: #314d5d;
+	width: 85%;
+	margin: 0 auto;
+}
+.item-size {
+	width: 45%;
+	margin: 0 2%;
+	padding-left: 5px;
+	height: 35px;
+	line-height: 35px;
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	transition: all 300ms ease;
+	border: 1px solid #a2a2ad;
+	border-radius: 2px;
+	outline: none;
 }
-.add-cart-btn:hover {
-	background-color: #00bcd4;
-	box-shadow: 0px 3px 1px rgba(134, 134, 134, 0.19);
+.item-add-btn {
+	width: 45%;
+	margin: 0 2%;
+	float: right;
+	border: 1px solid #a2a2ad;
+	border-radius: 2px;
+	outline: none;
+	background-color: white;
+	height: 35px;
+	text-transform: uppercase;
+	transition: all .3s ease;
 }
-.add-cart-btn.clicked {
-	animation-name: clickedBtn;
-	animation-duration: 150ms;
+.item-add-btn:hover {
+	background-color: #314d5d;
+	border: 1px solid #314d5d;
+	color: white;
 }
-@keyframes clickedBtn {
-	0% {transform: scale(1);}
-	50% {transform: scale(0.9);}
-	100% {transform: scale(1);}
+.item-add-btn.clicked {
+	background-color: #1a272f;
 }
 .add-cart {
 	cursor: pointer;
 	padding: 10px;
 	position: fixed;
-	right: 30px;
+	right: 20px;
 	bottom: 30px;
 	width: 70px;
 	height: 70px;
 	background-color: white;
-	border-radius: 50%;
-	box-shadow: 0 0 14px 2px rgba(199, 199, 199, 0.72);
+	border: 1px solid rgba(128, 128, 128, 0.19);
+    border-radius: 10%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.34);
 	box-sizing: border-box;
 	
 	opacity: 0;
@@ -72,14 +99,15 @@ html, body {
 }
 .add-cart-item-num {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 5px;
+	right: 31%;
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background-color: #03a9f4;
+	background-color: #314d5d;
 	text-align: center;
 	color: white;
 	font-size: 0.8em;
+	font-weight: bold;
 	line-height: 25px;
 }
