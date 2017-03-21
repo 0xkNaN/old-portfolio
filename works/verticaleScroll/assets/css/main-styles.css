@@ -8,7 +8,8 @@ html, body {
 	position: fixed;
 	top: 50%;
 	left: 3%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	z-index: 10;
 }
 .main-nav ul {
@@ -20,7 +21,8 @@ html, body {
 	margin-bottom: 15px;
 }
 .main-nav a:hover .dot {
-	transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	        transform: scale(1.3);
 	border-color: #ff9800;
 }
 .main-nav .dot.active {
@@ -38,7 +40,8 @@ html, body {
 	height: 12px;
 	width: 12px;
 	border-radius: 50%;
-	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	        transform: scale(0.8);
 	transition: all 250ms ease;
 }
 .main-nav .tab-title {
@@ -73,7 +76,8 @@ html, body {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
 }
 .section-content h1,
 .section-content h2,
