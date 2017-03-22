@@ -1,10 +1,8 @@
 
-
 // Vars
 $red_theme: #f44336;
 $content_color: #8a8a8a;
 $s_title-top: #d1d1d1;
-
 
 // Mixins
 @mixin transition($p) {
@@ -12,7 +10,6 @@ $s_title-top: #d1d1d1;
      -moz-transition: $p;
           transition: $p;
 }
-
 
 html, body {
   font-family: 'Raleway', sans-serif;
@@ -30,7 +27,6 @@ html, body {
 }
 
 
-
 // Commons
 .c-section {
   position: absolute;
@@ -41,6 +37,8 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 .selected-section {
   display: block !important;
