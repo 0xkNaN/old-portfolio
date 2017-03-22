@@ -13,9 +13,16 @@ html, body {
 .items-list {
 	margin: 50px auto 0 auto;
 }
+.item-wrapper {
+	margin: 0 auto 70px auto;
+}
+.item-wrapper:after {
+	content: "";
+	display: block;
+	clear: both;
+}
 .item {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-	margin: 0 auto 50px auto;
 	max-width: 400px;
 	background-color: white;
 }
@@ -33,12 +40,12 @@ html, body {
 	font-size: .8em;
 	font-weight: bold;
 	color: #314d5d;
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 }
 .item-size {
-	width: 45%;
-	margin: 0 2%;
+	width: 44%;
+	margin: 0 3%;
 	padding-left: 5px;
 	height: 35px;
 	line-height: 35px;
@@ -48,8 +55,8 @@ html, body {
 	outline: none;
 }
 .item-add-btn {
-	width: 45%;
-	margin: 0 2%;
+	width: 44%;
+	margin: 0 3%;
 	float: right;
 	border: 1px solid #a2a2ad;
 	border-radius: 2px;
@@ -66,6 +73,20 @@ html, body {
 }
 .item-add-btn.clicked {
 	background-color: #1a272f;
+}
+.item-name {
+	color: #314d5d;
+	font-size: 1.1em;
+	font-weight: bold;
+	float: left;
+	margin: 15px 0 0 20px;
+}
+.item-price {
+	color: #314d5d;
+	font-size: 1.1em;
+	font-weight: bold;
+	float: right;
+	margin: 15px 20px 0 0;
 }
 .add-cart {
 	cursor: pointer;
