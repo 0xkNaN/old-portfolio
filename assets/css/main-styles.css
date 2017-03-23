@@ -1,3 +1,6 @@
+/*****************
+    Init
+*****************/
 html, body {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
@@ -114,6 +117,9 @@ html, body {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+/********************
+    Navbar Styles
+*********************/
 .main-nav {
   background-color: rgba(0, 0, 0, 0.95);
   position: fixed;
@@ -211,6 +217,9 @@ html, body {
   100% {
     bottom: 0;
     opacity: 1; } }
+/********************
+    Home styles
+*********************/
 #home {
   display: none;
   height: 100%; }
@@ -287,6 +296,9 @@ html, body {
   height: 100%;
   z-index: 2; }
 
+/********************
+    About Styles
+*********************/
 #about {
   display: none; }
 
@@ -403,6 +415,9 @@ html, body {
       left: 3px;
       color: #f44336; }
 
+/********************
+    Work Styles
+*********************/
 #work {
   display: none; }
 
@@ -497,6 +512,9 @@ html, body {
         .work-sample-wrapper .work-info .work-title {
           font-size: 1.5em; } }
 
+/********************
+    Contact Styles
+*********************/
 #contact {
   display: none; }
 
@@ -573,6 +591,9 @@ html, body {
       -webkit-transform: scale(1.2);
       transform: scale(1.2); }
 
+/********************
+    Todo Styles
+*********************/
 .no-overflow {
   overflow: auto; }
 
