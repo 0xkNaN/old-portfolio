@@ -1,4 +1,5 @@
 
+const homeWall  = document.getElementById("home-wallpaper");
 const loader  = document.getElementById("loader");
 const canvas  = document.getElementById("particles-canvas");
 const filter  = document.getElementById("main-filter");
@@ -86,13 +87,7 @@ nav_btn.onclick = function() {
 
 /* ini */
 showLoader(true, 0);
-document.body.onload = function() {
-  iniCanvas()
-  showLoader(false, 1300);
-};
-document.body.onclick = function(e) {
-  e = e || window.event;
-  console.log("X  : ", e.screenX);
-  console.log("Y  : ", e.screenY);
-  console.log(e);
-};
+
+iniCanvas();
+showLoader(false, 2000);
+
