@@ -87,4 +87,19 @@ nav_btn.onclick = function() {
 /* ini */
 showLoader(true, 0);
 iniCanvas();
-showLoader(false, 2000);
+
+document.onreadystatechange = function() {
+  if (document.readyState === 'complete') {
+    showLoader(false, 1300);
+  }
+};
+
+
+/*
+document.body.onclick = function(e) {
+  e = e || window.event;
+  console.log("X  : ", e.screenX);
+  console.log("Y  : ", e.screenY);
+  console.log(e);
+};
+*/
