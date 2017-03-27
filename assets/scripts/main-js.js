@@ -86,10 +86,15 @@ nav_btn.onclick = function() {
 
 /* ini */
 showLoader(true, 0);
+
+iniCanvas()
+showLoader(false, 1300);
+/*
 document.body.onload = function() {
   iniCanvas()
   showLoader(false, 1300);
 };
+*/
 document.body.onclick = function(e) {
   e = e || window.event;
   console.log("X  : ", e.screenX);
