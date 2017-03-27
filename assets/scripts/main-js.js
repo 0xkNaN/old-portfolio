@@ -92,12 +92,3 @@ iniCanvas();
 document.body.onload = function() {
    showLoader(false, 1300);
 };
-
-/*
-document.body.onclick = function(e) {
-  e = e || window.event;
-  console.log("X  : ", e.screenX);
-  console.log("Y  : ", e.screenY);
-  console.log(e);
-};
-*/
