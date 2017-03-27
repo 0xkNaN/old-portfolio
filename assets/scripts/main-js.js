@@ -89,10 +89,9 @@ nav_btn.onclick = function() {
 showLoader(true, 0);
 iniCanvas();
 
-
-document.addEventListener('DOMContentLoaded', function() {
+document.body.onload = function() {
    showLoader(false, 1300);
-});
+};
 
 /*
 document.body.onclick = function(e) {
