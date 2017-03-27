@@ -1,4 +1,5 @@
 
+const home  = document.getElementById("home");
 const loader  = document.getElementById("loader");
 const canvas  = document.getElementById("particles-canvas");
 const filter  = document.getElementById("main-filter");
@@ -88,12 +89,10 @@ nav_btn.onclick = function() {
 showLoader(true, 0);
 iniCanvas();
 
-document.onreadystatechange = function() {
-  if (document.readyState === 'complete') {
-    showLoader(false, 1300);
-  }
-};
 
+document.addEventListener('DOMContentLoaded', function() {
+   showLoader(false, 1300);
+});
 
 /*
 document.body.onclick = function(e) {
