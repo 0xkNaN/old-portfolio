@@ -88,7 +88,4 @@ nav_btn.onclick = function() {
 /* ini */
 showLoader(true, 0);
 iniCanvas();
-
-document.body.onload = function() {
-   showLoader(false, 1300);
-};
+showLoader(false, 4000);
