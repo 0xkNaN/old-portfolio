@@ -12,7 +12,7 @@ const nav_btn = document.getElementsByClassName("nav-mob-btn")[0];
 function iniCanvas() {
   var options = {
     particleColor: '#888',   // #f44336 | #888
-    background: 'assets/images/home_bg.jpg',
+    background: 'assets/images/home_bg_op.jpg',
     interactive: true,
     speed: 'medium',
     density: 'high'
@@ -88,4 +88,13 @@ nav_btn.onclick = function() {
 /* ini */
 showLoader(true, 0);
 iniCanvas();
-showLoader(false, 4000);
+showLoader(false, 3000);
+
+
+
+/*
+document.body.onload = function() {
+  console.log("home loaded"); 
+  showLoader(false, 1300);
+};
+*/
