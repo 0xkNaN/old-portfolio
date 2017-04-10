@@ -43,7 +43,7 @@
 
 body {
 	margin: 0;
-	background-image: linear-gradient(45deg, #33d633, #4fceb6);
+	background-color: #242726;
 	background-attachment: fixed;
 }
 
@@ -183,7 +183,7 @@ body {
 
 .score span {
 	color: white;
-	font-size: 90px;
+	font-size: 85px;
 	font-family: "Montserrat", sans-serif;
 	line-height: 110px;
 }
@@ -209,12 +209,14 @@ body {
 
 .game-title{
 	font-size: 17px;
+	font-weight: bold;
 	color: #990101;
 }
 
 .game-version {
-	font-size: 17px;
-	color: #101010;
+	font-size: 16px;
+	margin-left: 5px;
+	color: #fff;
 }
 
 
